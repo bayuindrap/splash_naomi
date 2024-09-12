@@ -82,6 +82,12 @@ const LogoContainer = styled.div`
 
 const Logo = styled.img`
   height: 32px;
+  cursor: pointer;
+   transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 const BoldHeading = styled.h1`
