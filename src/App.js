@@ -1,5 +1,5 @@
 import React from 'react';
-import HomePermadani from './images/logoper.png';
+import HomePermadani from './images/naomi display.png';
 import logo from './images/google.png';
 import logo2 from './images/appstore.png';
 import styled, { createGlobalStyle } from 'styled-components';
@@ -56,6 +56,7 @@ const ContentSection = styled.div`
   
   @media (min-width: ${breakpoints.mobile}) {
     flex-direction: row;
+    justify-content: space-around;
   }
 `;
 
@@ -71,6 +72,7 @@ const TextAndLogoContainer = styled.div`
     text-align: left;
     margin-bottom: 0;
     margin-right: 40px;
+    margin-left: 20px;
   }
 `;
 
@@ -120,7 +122,8 @@ const AppScreenshot = styled.img`
   
   @media (min-width: ${breakpoints.mobile}) {
     width: 35%;
-    max-width: 230px;
+    max-width: 350px;
+    max-height: 400px
   }
 `;
 
@@ -139,7 +142,7 @@ const SplashPage = () => {
                 <Logo src={logo2} style={{ marginLeft: 15 }} alt="App Store Logo" />
               </LogoContainer>
             </TextAndLogoContainer>
-            <AppScreenshot src={HomePermadani} alt="App Screenshot" />
+            <AppScreenshot src={HomePermadani}  alt="App Screenshot" />
           </ContentSection>
         </TopSection>
       </PageContainer>
